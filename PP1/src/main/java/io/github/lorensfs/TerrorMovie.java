@@ -1,5 +1,7 @@
 package io.github.lorensfs;
 
+
+
 /**
  * @author Lorenzo
  */
@@ -18,5 +20,6 @@ public class TerrorMovie extends BaseMovie {
     System.out.println(
       "Movie: " + getMovie() + "\n" + "Genre: " + getGenre() + "\n"
     );
+
   }
 }
