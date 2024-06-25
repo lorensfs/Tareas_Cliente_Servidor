@@ -18,4 +18,4 @@
 
 ## UML Class Diagram
 
- 
+<img src="./image/Class Diagram.svg" alt="UML Class Diagram of October Eats Project">
