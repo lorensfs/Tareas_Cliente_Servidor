@@ -1,3 +1,6 @@
+# October Eats
+## User Story Backlog
+
 | **ID** | **Title**                              | **User Story**                                                                                                                                                          | **Acceptance Criteria**                                                                                                                                                                                                                                      |
 |--------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1      | User Registration                      | As a new user, I want to register for an account providing my name, address, email, and password so that I can use the application.                                      | 1. User registration by entering name, address, email, and password. <br> 2. System validates the email is not already registered. |
@@ -13,4 +16,6 @@
 | 11     | Multi-threading for Server             | As a developer, I want to use multi-threading on the server so that multiple client connections can be handled simultaneously.                                          | 1. Server can handle multiple simultaneous connections. <br> 2. No concurrency issues occur when multiple users place orders.                                                                                                                               |
 | 12     | Database Integration                   | As a developer, I want to use a MySQL database to store information about users, restaurants, menus, and orders so that data is managed efficiently.                     | 1. Database schema is designed for users, restaurants, menus, and orders. <br> 2. Application can perform CRUD operations on the database. <br> 3. Data is stored securely.                                                                                     |
 
+## UML Class Diagram
 
+ 
