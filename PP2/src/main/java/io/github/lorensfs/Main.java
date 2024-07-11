@@ -1,5 +1,6 @@
 package io.github.lorensfs;
 
+
 public class Main {
     public static void main(String[] args) {
         Liebre liebre=new Liebre();
@@ -17,6 +18,8 @@ public class Main {
         }else{
             System.out.println("T has reached the goal first");
         }
+
+
     }
 
 }
