@@ -1,5 +1,62 @@
 # October Eats
-## User Story Backlog
+October Eats is an MVC application which was designed for practicing REST API creation with SpringBoot; for testing purposes a Java Swing UI was created to interact with the REST API through the endpoints.  
+
+- [Setup](#setup)
+  - [OctoberEatsRestApi](#OctoberEatsRestApi)
+    - [Dependencies](#dependencies)
+    - [Database Setup](#database-setup)
+   
+  - [OctoberEatsUI](#OctoberEatsUI)
+    - [Dependencies](#dependencies-1)
+- [User Story Backlog (Deprecated)](#user-story-backlog-deprecated)
+- [UML Class Diagram (Deprecated)](#uml-class-diagram-deprecated)
+
+## Setup
+### OctoberEatsRestApi
+> Go to [folder](OctoberEatsRestApi).
+#### Dependencies:
+- Spring Boot Starter Web
+- Spring Boot Starter Data JPA
+- MySQL Connector Java
+- Spring Boot Starter Test
+- MapStruct
+- MapStruct Processor
+
+#### Database Setup
+Is important to take in account that a database should be created before running the project with the name: "october_eats"
+```SQL
+CREATE DATABASE october_eats
+```
+Mysql server has to be available in port3306 with root username/password. Or update "application.properties" file accordingly.
+```
+spring.application.name=OctoberEats
+spring.datasource.url=jdbc:mysql://localhost:3306/october_eats
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+```
+When running the program for the first time the schema will be created. The second run is important to change "application.properties" file in order to indicate to Hibernate to only update the table from now:
+```
+spring.jpa.hibernate.ddl-auto=update
+```
+### OctoberEatsUI
+> Go to [folder](OctoberEatsUI)
+
+> [!IMPORTANT]  
+> OctoberEatsRestApi should be running, so the UI can communicate with it.
+#### Dependencies:
+- Gson
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#### User Story Backlog (Deprecated)
 
 | **ID** | **Title**                              | **User Story**                                                                                                                                                          | **Acceptance Criteria**                                                                                                                                                                                                                                      |
 |--------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -16,6 +73,6 @@
 | 11     | Multi-threading for Server             | As a developer, I want to use multi-threading on the server so that multiple client connections can be handled simultaneously.                                          | 1. Server can handle multiple simultaneous connections. <br> 2. No concurrency issues occur when multiple users place orders.                                                                                                                               |
 | 12     | Database Integration                   | As a developer, I want to use a MySQL database to store information about users, restaurants, menus, and orders so that data is managed efficiently.                     | 1. Database schema is designed for users, restaurants, menus, and orders. <br> 2. Application can perform CRUD operations on the database. <br> 3. Data is stored securely.                                                                                     |
 
-## UML Class Diagram
+#### UML Class Diagram (Deprecated)
 
 <img src="./image/Class Diagram.svg" alt="UML Class Diagram of October Eats Project">
