@@ -45,7 +45,7 @@ spring.jpa.hibernate.ddl-auto=update
 > Go to [folder](OctoberEatsUI)
 
 > [!IMPORTANT]  
-> OctoberEatsRestApi should be running, so the UI can communicate with it.
+> OctoberEatsRestApi should be running, so the UI can communicate with it; to test the application fill the database with data, [fillValues](FillValues.sql) SQL script is provided.
 #### Dependencies:
 - Gson
 
